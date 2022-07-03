@@ -87,7 +87,6 @@ def add_date():
     autoload = autoload_wb.active
     autoload_row_max = 0
     setting = {}
-    
     for row in range(3, settings.max_row + 1):
         setting_dict = {}
         for column in range(2, settings.max_column + 1):
@@ -139,9 +138,7 @@ def main():
     print("[5] - Добавить Адрес")
     print("[6] - Добавить Изображения")
     print("[7] - Добавить Даты")
-
     btn = input("Выберите действие над данными: ")
-
     match btn:
         case "0":
             exit
@@ -166,7 +163,6 @@ def main():
         case "7":
             add_date()
             main() 
-
 #multiplication()
 #add_id()
 #add_address()
